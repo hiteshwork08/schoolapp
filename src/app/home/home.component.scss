@@ -1,0 +1,38 @@
+.spacer {
+    flex: 1 1 auto;
+    mat-icon {
+        font-size: 16px;
+    }
+}
+mat-tab-group {
+    .incomplete,
+    .complete {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    
+  .grid-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+      padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+    mat-toolbar {
+        button {
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+.danger {
+    color: #d74c48;
+}
+.success {
+    color: #199e0e;
+}
