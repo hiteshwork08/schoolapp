@@ -17,6 +17,11 @@ mat-tab-group {
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 1rem;
       padding: 15px;
+      mat-card{
+          .mat-card-title{
+              font-size: 17px;
+          }
+      }
   }
 }
 
