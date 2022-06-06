@@ -12,17 +12,7 @@ mat-tab-group {
         text-transform: uppercase;
     }
     
-  .grid-container{
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 1rem;
-      padding: 15px;
-      mat-card{
-          .mat-card-title{
-              font-size: 17px;
-          }
-      }
-  }
+  
 }
 
 @media (max-width: 768px) {
