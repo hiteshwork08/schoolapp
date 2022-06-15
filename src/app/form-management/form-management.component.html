@@ -1,0 +1,27 @@
+<mat-toolbar>
+    <span>Form Management</span>
+    <span class="spacer"></span>
+    <button  mat-icon-button  mat-raised-button color="primary" (click)="submitFormData()">
+        <mat-icon>save</mat-icon>
+    </button>
+</mat-toolbar>
+
+
+<div class="content-wrapper">
+    <mat-label class="note">
+        <p><b>Note :</b> Active forms are visible to the public, Use this page to mark forms active or inactive</p>
+    </mat-label>
+    <div class="grid-container">
+        <mat-card *ngFor="let forms of filteredForms">
+            <mat-card-title>{{forms[0]}}</mat-card-title>
+            <mat-card-content>
+                <mat-list>
+                    <mat-list-item *ngFor="let form of forms[1]">
+                        <mat-checkbox class="example-margin" [(ngModel)]="form.active" (ngModelChange)="chamgedActiveStatus(form)">{{form.formName}}</mat-checkbox>
+                    </mat-list-item>
+                </mat-list>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+</div>

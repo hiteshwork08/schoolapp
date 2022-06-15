@@ -1,3 +1,4 @@
+import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -27,7 +28,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatIconModule,
     MatDividerModule,
     MatFormFieldModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

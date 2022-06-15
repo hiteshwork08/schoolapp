@@ -7,6 +7,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatListModule} from '@angular/material/list';
+import { FormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 const SHARED_MODULES = [
     MatToolbarModule,
@@ -15,6 +19,10 @@ const SHARED_MODULES = [
     MatCardModule,
     MatTabsModule,
     MatFormFieldModule,
+    MatCheckboxModule,
+    MatListModule,
+    MatSnackBarModule,
+    FormsModule
 ]
 
 @NgModule({

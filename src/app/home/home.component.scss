@@ -1,9 +1,4 @@
-.spacer {
-    flex: 1 1 auto;
-    mat-icon {
-        font-size: 16px;
-    }
-}
+
 mat-tab-group {
     .incomplete,
     .complete {
@@ -31,3 +26,4 @@ mat-tab-group {
 .success {
     color: #199e0e;
 }
+

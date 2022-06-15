@@ -1,4 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 15px;
+    mat-card {
+        .mat-card-title {
+            font-size: 17px;
+        }
+    }
+}
+.danger {
+    color: #d74c48;
+}
+.success {
+    color: #199e0e;
+}
+
+button {
+    mat-icon {
+        font-size: 16px;
+    }
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.mat-snack-bar-container.success {
+    background: #34a853;
+    color: #ffffff;
+}
+.mat-snack-bar-container.error {
+    background: #ea4335;
+    color: #ffffff;
+}
+.mat-snack-bar-container.warning {
+    background: #fbbc05;
+    color: #ffffff;
+}
